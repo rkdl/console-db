@@ -1,0 +1,12 @@
+Album get_album(uint64_t album_id);
+Track get_track(uint64_t track_id);
+void update_album(uint64_t id, AlbumFields field, void *new_val);
+void update_track(uint64_t id, TrackFields field, void *new_val);
+void get_album_track_ids(uint64_t *ids_buf, uint64_t amount, uint64_t album_id);
+void insert_album(Album album);
+void insert_track(Track track);
+void delete_album(uint64_t album_id);
+void delete_track(uint64_t track_id);
+uint64_t get_albums_records_amount();
+uint64_t get_tracks_records_amount();
+size_t get_album_idx_size(uint64_t album_id);
